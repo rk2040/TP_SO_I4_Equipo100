@@ -8,3 +8,29 @@ C- ¿Qué color de fondo tiene su página en el MASTER?
 	Blanco
 D- ¿Qué favicon quedó en el MASTER el de ALFA o el de BETA?
 	Quedo el favicon de Beta
+E- ¿Algún integrante tuvo problemas al hacer el push?
+	Beta y Gamma tuvieron problemas al hacer el push
+F- ¿Qué problemas surgieron?
+error: failed to push some refs to 'https://github.com/rk2040/TP_SO_I4_Equipo100.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+	Surgio el problema porque no teniamos los repositorios actualizados a la ultima version.
+	
+G- ¿Qué soluciones pueden aplicar y cual seria la consecuencia de cada solución
+adoptada?
+	Primero para actualizar la rema del repositorio con git pull
+	Luego recien hacer el push
+	Otra opcion es hacer git push -f pero se subira el archivo tal cual lo tenemos al momento de hacer el push, perdiendo las ultimas modificaciones que se hayan hecho
+H- ¿Qué sucede si cada uno utiliza el push -f?
+	git push -f pero se subira el archivo tal cual lo tenemos al momento de hacer el push, pisando los cambios que hayan realizado otras personas
+I- ¿Qué debo hacer para que el index.html tengas todos los <p> de los puntos 18,19 y 20
+en DESARROLLO ?
+	Se deberia hacer en secuencia. 
+	Alfa hace un push 
+	Beta hace un pull y luego hace el push
+	Gamma hace el pull y realiza el ultimo push.
+	Luego cambiar a la rama DESAROLLO y hacer el merge TESTING.
